@@ -11,5 +11,8 @@ namespace Pierwszy_projekt_na_serio.Data
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
         public DbSet<Client> Clients { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderHistory> OrderHistories { get; set; }
+        public DbSet<Worker> Workers { get; set; }
     }
 }

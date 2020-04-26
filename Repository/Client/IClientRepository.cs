@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Pierwszy_projekt_na_serio.Repository.Client
+namespace Pierwszy_projekt_na_serio.Repository.Clients
 {
     public interface IClientRepository
     {

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Pierwszy_projekt_na_serio.Service.Worker;
 
 namespace Pierwszy_projekt_na_serio.Controllers
 {
@@ -11,5 +12,11 @@ namespace Pierwszy_projekt_na_serio.Controllers
     [ApiController]
     public class WorkerController : ControllerBase
     {
+        private readonly IWorkerService _service;
+
+        public WorkerController(IWorkerService service)
+        {
+            _service = service;
+        }
     }
 }

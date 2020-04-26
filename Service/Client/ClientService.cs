@@ -1,5 +1,5 @@
 ﻿using Pierwszy_projekt_na_serio.Models.Information;
-using Pierwszy_projekt_na_serio.Repository.Client;
+using Pierwszy_projekt_na_serio.Repository.Clients;
 using System;
 using System.Collections.Generic;
 using System.Linq;

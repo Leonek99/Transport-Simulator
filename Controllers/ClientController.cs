@@ -39,14 +39,14 @@ namespace Pierwszy_projekt_na_serio.Controllers
         public async Task<IActionResult> EditClient(ClientInformation clientInformation)
         {
             await _service.EditClient(clientInformation);
-            return Ok("Nastąpiła zmiana w użytkowniku");
+            return Ok("Nastąpiła zmiana w kliencie");
         }
        
         [HttpPost]
         public async Task<IActionResult> AddClient(ClientInformation clientInformation)
         {
             await _service.AddClient(clientInformation);
-            return Ok("Pomyślnie dodano użykownika");
+            return Ok("Pomyślnie dodano klienta");
         }
     }
 }

@@ -9,5 +9,8 @@ namespace Pierwszy_projekt_na_serio.Service.Worker
     public interface IWorkerService
     {
         Task<IEnumerable<WorkerInformation>> GetWorkers();
+        Task<WorkerInformation> GetWorker(int id);
+        Task EditWorker(WorkerInformation workerInformation);
+        Task AddWorker(WorkerInformation workerInformation);
     }
 }
